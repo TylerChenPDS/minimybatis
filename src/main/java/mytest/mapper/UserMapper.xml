@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="mytest.mapper.UserMapper">
+
+	<select id="getUser" resultType="mytest.bean.Myuser">
+		select * from myuser where id = #{id}
+	</select>
+	
+	<select id="getAll" resultType="mytest.bean.Myuser">
+		select * from myuser 
+	</select>
+	
+	<update id="updateUser">
+		update myuser set username = 'Tylerchen' where id = #{id}
+	</update>
+	
+</mapper>
